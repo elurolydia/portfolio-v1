@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 6px 0px;
+}
+
+body{
+  color: white;
+  background-color: black;
+}
+
+.nav{
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  position: fixed;
+  top: 0;
+}
+
+.nav a{
+  /* background-color: yellow; */
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0px 25px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bolder;
+  margin: 0px 6px;
+  vertical-align: center;
+}
+
+.nav a:hover{
+  color: rgb(43, 161, 161);
+}
+
+.nav a:active{
+  color: rgb(7, 250, 250);
+}
+
+.landing_page{
+  height: 100vh;
+  color: rgb(5, 231, 231);
+}
+
+.landing_page .content {
+  margin-top: 130px;
+  margin-left: 130px;
+}
+
+.landing_page p{
+  font-size: 20px;
+  color: rgba(0, 255, 255, 0.349);
+}
+
+.landing_page h1,h2{
+  padding-left: 50px;
+  color: rgba(0, 255, 255, 0.753);
+}
+
+.landing_page h1{
+  font-size: 55px;
+}
+
+.landing_page h2{
+  font-size: 37px;
+}
+
+.projects{
+  background-color: aquamarine;
+  /* height: 1000px; */
+  width: 100%;
+  padding: 60px 150px;
+  margin: 25px auto;
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.projects .cards div{
+  height: 250px;
+  width: 250px;
+  margin-top: 18px;
+  background-color: rgba(39, 38, 38, 0.733);
+}
+
+.project_title {
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: tomato;
+}
+
+.project_image {
+  border-radius: 7px;
+  height: 200px;
+  width: 200px;
+}
