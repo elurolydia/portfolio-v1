@@ -3,7 +3,7 @@ import  ProjectData  from "./ProjectData";
 
 const Projects = () => {
     return (
-        <div className='projects'>
+        <div id="projects" className='projects'>
     
                 <ProjectData/>
             

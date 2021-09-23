@@ -33,6 +33,17 @@ body{
   vertical-align: center;
 }
 
+.nav img{
+  size: 30px;
+  margin-right: 50px;
+  vertical-align: center;
+  padding: 0px 25px;
+}
+
+.nav img:hover{
+  cursor: pointer;
+}
+
 .nav a:hover{
   color: rgb(43, 161, 161);
 }
@@ -137,3 +148,21 @@ body{
   background-color: rgb(43, 42, 42);
   height: 400px;
 }
+
+.about_section {
+  background-color: lightcoral;
+  padding: 50px 20px;
+  color: white;
+}
+
+.about_header {
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.about_content{
+  color: white;
+  font-size: 16px;
+}
+

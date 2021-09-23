@@ -1,5 +1,6 @@
 import LandingPage from './components/LandingPage';
 import Projects from './components/Projects';
+import AboutSection from './components/AboutSection';
 import Footer from './components/Footer'
 
 
@@ -8,6 +9,7 @@ const App = () => {
     <div>
       <LandingPage/>
       <Projects/>
+      <AboutSection/>
       <Footer/>
       
     </div>
