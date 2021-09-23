@@ -1,12 +1,12 @@
 
-import  ProjectData  from "../components/ProjectData";
+import  ProjectData  from "./ProjectData";
 
 const Projects = () => {
     return (
         <div className='projects'>
-            <div className= 'cards'>
+    
                 <ProjectData/>
-            </div>
+            
         </div>
     )
 }

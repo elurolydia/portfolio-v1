@@ -13,9 +13,13 @@ body{
   background-color: black;
   width: 100%;
   height: 60px;
-  text-align: right;
   position: fixed;
   top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
 }
 
 .nav a{
@@ -24,7 +28,6 @@ body{
   color: whitesmoke;
   padding: 0px 25px;
   font-size: 20px;
-  line-height: 40px;
   font-weight: bolder;
   margin: 0px 6px;
   vertical-align: center;
@@ -41,6 +44,7 @@ body{
 .landing_page{
   height: 100vh;
   color: rgb(5, 231, 231);
+  background-color: black;
 }
 
 .landing_page .content {
@@ -54,7 +58,7 @@ body{
 }
 
 .landing_page h1,h2{
-  padding-left: 50px;
+  /* padding-left: 50px; */
   color: rgba(0, 255, 255, 0.753);
 }
 
@@ -67,41 +71,69 @@ body{
 }
 
 .projects{
-  background-color: aquamarine;
+  background-color: rgb(13, 179, 170);
   /* height: 1000px; */
   width: 100%;
   padding: 60px 150px;
-  margin: 25px auto;
+  margin: 0px auto;
+  position: inherit;
 }
 
-.projects .cards {
+.project_background{
+  height: 300px;
+  width: 300px;
+  background-size: 300px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+.project_title_container{
+  width: 300px;
+  height: 50px;
+  background-color: #555555AA;
+  display: flex;
+  align-items: center;
+  
+}
+
+.project_background:hover{
+  cursor: grab;
+}
+
+/* .projects .cards {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-}
+} */
 
-.projects .cards div{
+/* .projects .cards div{
   height: 250px;
   width: 250px;
   margin-top: 18px;
   background-color: rgba(39, 38, 38, 0.733);
-}
+} */
 
 .project_title {
-  font-size: larger;
-  color: white;
+  font-size: 20px;
+  color: rgb(240, 236, 236);
   font-weight: bold;
+  margin-left: 16px;
 }
 
-.card {
-  width: 250px;
-  height: 250px;
+/* .card {
+  width: 200px;
+  height: 300px;
   box-sizing: border-box;
   border-radius: 7px;
-  background-color: tomato;
-}
+} */
 
 .project_image {
-  border-radius: 7px;
+  border-radius: 10px;
   height: 200px;
   width: 200px;
+}
+
+.footer{
+  background-color: rgb(43, 42, 42);
+  height: 400px;
 }

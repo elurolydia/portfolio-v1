@@ -1,20 +1,25 @@
-import PropTypes from 'prop-types'
+import TitleText from "./TitleText";
+import { useState } from "react";
 
-const ProjectItem = ({project}) => {
-    return (
-        <div className="card">
-            <img alt= "project_image" className="project_image" src={project.image}/>
-            <br/>
-            <text className="project_title">{project.name}</text>
-            <br/>
-            <text className="project_title">{project.desc}</text>           
-        </div>
-    )
-}
-
-export default ProjectItem
+const ProjectItem = ({ project }) => {
+  const [toggleState, setToggleState] = useState('');
+  const showTitle = (show) => {
+      show ? setToggleState( <TitleText title={project.name} />): setToggleState('')
+  };
 
 
-ProjectItem.propTypes = {
-    project : PropTypes.object.isRequired,
-}
+
+
+  return (
+    <div
+      className="project_background"
+      style={{ backgroundImage: `url(${project.image})` }}
+      onMouseOver={() => showTitle(true)}
+      onMouseOut={() => showTitle(false)}
+    >
+      {toggleState}
+    </div>
+  );
+};
+
+export default ProjectItem;

@@ -1,5 +1,6 @@
 import LandingPage from './components/LandingPage';
-import Projects from './components/Projects'
+import Projects from './components/Projects';
+import Footer from './components/Footer'
 
 
 const App = () => {
@@ -7,6 +8,8 @@ const App = () => {
     <div>
       <LandingPage/>
       <Projects/>
+      <Footer/>
+      
     </div>
   );
 }
