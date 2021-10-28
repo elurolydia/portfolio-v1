@@ -40,7 +40,7 @@ const Skills = () => {
 
   return (
     <div className="about_card Education">
-      <h3>Skills</h3>
+      <h3 className="about_inner_header">Skills</h3>
       <div id="skills">
         {eachSkill.map((skill) => {
           return (

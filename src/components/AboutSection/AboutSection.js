@@ -4,10 +4,10 @@ import Skills from "./Skills";
 const AboutSection = () => {
   return (
     <div className="about_section" id="about">
-      <h2 className="inner_header">About</h2>
+      <h2 className="about_header">About</h2>
       <div className="about_content">
         <div className="about_card Education">
-          <h3>Education</h3>
+          <h3 className="about_inner_header">Education</h3>
           <p>
             Google Africa Developers Scholarship
             <br />
@@ -16,7 +16,7 @@ const AboutSection = () => {
           </p>
 
           <p>
-            Osun State Polytechnic, Iree, Osun — HND
+            Osun State Polytechnic, Iree, Osun State, Nigeria
             <br />
             <small>2018</small>
             <p>Mass Communication</p>
